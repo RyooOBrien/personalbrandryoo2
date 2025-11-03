@@ -4,7 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Febrio Putra Pratama - Personal Branding</title>
+  
   <style>
+    .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project-card {
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255,255,255,0.15);
+}
+
+.project-card h3 {
+  color: #ffeb3b;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #ddd;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.project-card a {
+  color: #00c9ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
     * { margin:0; padding:0; box-sizing:border-box; font-family:"Poppins",sans-serif; }
 
     body {
@@ -120,6 +162,23 @@
         <li>Desain UI/UX, Website Fitur, Script Engginer</li>
       </ul>
     </section>
+    <section id="Portfolio">
+  <h2>My Projects</h2>
+  <div class="projects">
+    <div class="project-card">
+      <h3>Website Top-Up Mobile Legend</h3>
+      <p>Website top-up Mobile Legends. Contoh Jika Ingin Membuat Website Penjualan Topup Game.</p>
+      <a href="https://ryooobrien.github.io/webtopup/" target="_blank">Lihat Project 🔗</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Personal Branding Site</h3>
+      <p>Website ini sendiri! Dibuat menggunakan HTML, CSS, Dan JavaSciprt.</p>
+      <a href="https://ryooobrien.github.io/personalbrandryoo2/" target="_blank">Lihat Project 🔗</a>
+    </div>
+  </div>
+</section>
+
 
     <section id="Contact Me">
       <h2>Contact Me</h2>
@@ -203,4 +262,3 @@
   </script>
 </body>
 </html>
-
